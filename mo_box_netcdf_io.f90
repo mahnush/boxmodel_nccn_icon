@@ -301,29 +301,29 @@ CONTAINS
       WRITE(*,*) 'variable ID6', varID6	     
     status = nf90_get_var(ncID2, varID6, VarMix_DUl)
       IF(status /= nf90_NoErr) CALL handle_err(status)
-
+    !msh
     status = nf90_inq_varid(ncID2,Paramname(7),varID7) 
       IF(status /= nf90_NoErr) CALL handle_err(status)
       WRITE(*,*) 'variable ID7', varID7	     
-    status = nf90_get_var(ncID2, varID7, VarMix_OMn)
+    status = nf90_get_var(ncID2, varID7, VarMix_OMh)
       IF(status /= nf90_NoErr) CALL handle_err(status)
-
+    !msh
     status = nf90_inq_varid(ncID2,Paramname(8),varID8) 
       IF(status /= nf90_NoErr) CALL handle_err(status)
       WRITE(*,*) 'variable ID8', varID8	     
-    status = nf90_get_var(ncID2, varID8, VarMix_OMh)
+    status = nf90_get_var(ncID2, varID8, VarMix_OMn)
       IF(status /= nf90_NoErr) CALL handle_err(status)
-
+    !msh
     status = nf90_inq_varid(ncID2,Paramname(9),varID9) 
       IF(status /= nf90_NoErr) CALL handle_err(status)
       WRITE(*,*) 'variable ID9', varID9	     
-    status = nf90_get_var(ncID2, varID9, VarMix_BCn)
+    status = nf90_get_var(ncID2, varID9, VarMix_BCh)
       IF(status /= nf90_NoErr) CALL handle_err(status)
-
+    !msh
     status = nf90_inq_varid(ncID2,Paramname(10),varID10) 
       IF(status /= nf90_NoErr) CALL handle_err(status)
       WRITE(*,*) 'variable ID10', varID10	     
-    status = nf90_get_var(ncID2, varID10, VarMix_BCh)
+    status = nf90_get_var(ncID2, varID10, VarMix_BCn)
       IF(status /= nf90_NoErr) CALL handle_err(status)
 
     status = nf90_inq_varid(ncID2,Paramname(11),varID11) 
